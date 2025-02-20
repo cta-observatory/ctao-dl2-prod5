@@ -5,9 +5,9 @@ hide:
 
 # CTAO Monte Carlo Simulations - DL2 prod5
 
-Welcome to the DL2 Parameters Documentation.
-
 This site provides a simple overview of the dataset CTAO Monte Carlo Simulations at DL2 level: [https://zenodo.org/records/7298569](https://zenodo.org/records/7298569)
+
+To get more information about the dataset, please visit the Zenodo page.
 
 ## Installation
 
@@ -23,7 +23,6 @@ Then start Jupyter:
 ```bash
 jupyter-lab
 ```
-
 
 ## Contents
 

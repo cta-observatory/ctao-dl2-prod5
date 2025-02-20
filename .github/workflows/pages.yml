@@ -1,0 +1,50 @@
+name: MkDocs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup env
+        uses: mamba-org/setup-micromamba@v2
+        with:
+          miniforge-variant: Mambaforge
+          miniforge-version: latest
+          activate-environment: ctaodl2
+          use-mamba: true
+          environment-file: environment.yml
+          cache-environment: true
+          cache: true
+
+      - name: Cache data
+        id: cache-data
+        uses: actions/cache@v3
+        with:
+          path: data
+          key: ${{ runner.os }}-data-${{ github.ref }}-${{ github.sha }}-${{ hashFiles('get_data.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-data-${{ github.ref }}-
+            ${{ runner.os }}-data-
+
+      - name: Build documentation
+        run: |
+          eval "$(micromamba shell hook --shell bash)"
+          micromamba activate ctaodl2
+          if [ ! -d "data" ]; then
+            ./get_data.sh
+          fi
+          mkdocs build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
