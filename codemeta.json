@@ -1,0 +1,35 @@
+{
+    "$schema": "http://codemeta.github.io/codemeta.json",
+    "name": "ctao-dl2-prod5",
+    "description": "Exploration of CTAO Monte Carlo Simulations - DL2 prod5",
+    "version": "1.0.0",
+    "author": [
+      {
+        "name": "Thomas Vuillaume",
+        "affiliation": "LAPP-CNRS, CTA Observatory"
+      }
+    ],
+    "keywords": [
+      "CTAO",
+      "Monte Carlo",
+      "Simulations",
+      "Astrophysics",
+      "Data Analysis"
+    ],
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/cta-observatory/ctao-dl2-prod5"
+    },
+    "homepage": "https://cta-observatory.github.io/ctao-dl2-prod5/",
+    "citation": {
+      "type": "CreativeWork",
+      "name": "CTAO Monte Carlo Simulations - Eventlists on DL2 data level - prod5",
+      "url": "https://zenodo.org/records/7298569",
+      "identifier": {
+        "type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5281/zenodo.7298569"
+      }
+    }
+  }
