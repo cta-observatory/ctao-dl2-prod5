@@ -1,0 +1,17 @@
+name: ctaodl2
+channels:
+  - conda-forge
+dependencies:
+  - astropy
+  - ctapipe=0.17
+  - jupyterlab
+  - matplotlib
+  - mkdocs
+  - mkdocs-material
+  - mkdocs-jupyter
+  - numpy
+  - pandas
+  - pip
+  - pyirf
+  - python=3.9
+  - scipy
