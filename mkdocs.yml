@@ -1,0 +1,41 @@
+site_name: CTAO Monte Carlo Simulations - DL2 prod5
+
+nav:
+  - Home: index.md
+  - Simulation Info: simu_info.ipynb
+  - DL2 Parameters: dl2_params.ipynb
+  - Events Images: display_images.ipynb
+  - Reconstruction performances: dl2_performances.ipynb
+
+theme:
+  name: material
+  custom_dir: docs/stylesheets
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.instant
+    - navigation.top
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: true
