@@ -9,6 +9,8 @@ This site provides a simple overview of the dataset CTAO Monte Carlo Simulations
 
 To get more information about the dataset, please visit the Zenodo page.
 
+For up-to-date code examples, please visit the ctapipe documentation: [https://cta-observatory.github.io/ctapipe/](https://cta-observatory.github.io/ctapipe/).
+
 ## Installation
 
 To run the notebooks on your computer, create a new conda environment and install the required packages:
