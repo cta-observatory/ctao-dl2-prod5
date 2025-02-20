@@ -1,0 +1,8 @@
+.md-main__inner {
+    max-width: 10000px; /* Augmentez cette valeur pour augmenter la largeur */
+}
+
+.md-grid {
+    max-width: 100%; 
+  }
+  
